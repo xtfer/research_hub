@@ -1,0 +1,291 @@
+<?php
+
+/**
+ * Implementation of hook_ds_default_settings().
+ */
+function research_hub_resource_ds_default_settings() {
+  $data = array(
+    'nd' => array(
+      'resource' => array(
+        'full' => array(
+          'fields' => array(
+            'field_primary_image' => array(
+              'region' => 'header',
+              'weight' => '-50',
+              'format' => 'custom_formatters_example_image',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'field_resource_link' => array(
+              'region' => 'header',
+              'weight' => '-48',
+              'format' => 'default',
+              'css-class' => '',
+              'label_value' => 'Link',
+              'labelformat' => 'inline',
+            ),
+            'field_resource_collection' => array(
+              'region' => 'header',
+              'weight' => '-50',
+              'format' => 'default',
+              'css-class' => '',
+              'label_value' => 'Collection',
+              'labelformat' => 'inline',
+              'parent' => 'group_resource_categories',
+            ),
+            'field_node_research_theme' => array(
+              'region' => 'header',
+              'weight' => '-49',
+              'format' => 'default',
+              'css-class' => '',
+              'labelformat' => 'inline',
+              'parent' => 'group_resource_categories',
+            ),
+            'field_pub_subject' => array(
+              'region' => 'header',
+              'weight' => '-48',
+              'format' => 'link',
+              'css-class' => '',
+              'label_value' => 'Subject',
+              'labelformat' => 'inline',
+              'parent' => 'group_resource_categories',
+            ),
+            'group_link' => array(
+              'region' => 'disabled',
+              'weight' => '-40',
+              'format' => 'ds_field',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'group_resource_categories' => array(
+              'region' => 'header',
+              'weight' => '-46',
+              'format' => 'ds_group_fieldset_open',
+              'css-class' => '',
+              'labelformat' => 'above',
+            ),
+            'title' => array(
+              'region' => 'disabled',
+              'weight' => '-42',
+              'format' => 'nd_title_h1_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'author' => array(
+              'region' => 'disabled',
+              'weight' => '-41',
+              'format' => 'ds_author_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'links' => array(
+              'region' => 'disabled',
+              'weight' => '-44',
+              'format' => '',
+              'css-class' => '',
+              'label_value' => 'Link',
+              'labelformat' => 'hidden',
+            ),
+            'read_more' => array(
+              'region' => 'disabled',
+              'weight' => '-43',
+              'format' => 'ds_eval_code',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'post_date' => array(
+              'region' => 'header',
+              'weight' => '-47',
+              'format' => 'nd_post_date_piarn_no_time',
+              'css-class' => '',
+              'label_value' => 'Date added',
+              'labelformat' => 'inline',
+            ),
+            'body' => array(
+              'region' => 'header',
+              'weight' => '-49',
+              'format' => 'nd_bodyfield',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'files' => array(
+              'region' => 'footer',
+              'weight' => '-45',
+              'format' => '',
+              'css-class' => '',
+              'label_value' => 'Files',
+              'labelformat' => 'inline',
+            ),
+          ),
+          'cssoverrider' => array(
+            'class' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+            'inline' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+          ),
+          'status' => 2,
+          'region_styles' => array(
+            'header' => '',
+            'left' => '',
+            'middle' => '',
+            'right' => '',
+            'footer' => '',
+          ),
+        ),
+      ),
+      'resource_collection' => array(
+        'full' => array(
+          'fields' => array(
+            'title' => array(
+              'region' => 'disabled',
+              'weight' => '-45',
+              'format' => 'nd_title_h1_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'author' => array(
+              'region' => 'disabled',
+              'weight' => '-46',
+              'format' => 'ds_author_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'links' => array(
+              'region' => 'disabled',
+              'weight' => '-47',
+              'format' => '',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'read_more' => array(
+              'region' => 'disabled',
+              'weight' => '-48',
+              'format' => 'ds_eval_code',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'post_date' => array(
+              'region' => 'disabled',
+              'weight' => '-49',
+              'format' => 'nd_post_date_long',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'body' => array(
+              'region' => 'header',
+              'weight' => '-50',
+              'format' => 'nd_bodyfield',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+          ),
+          'cssoverrider' => array(
+            'class' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+            'inline' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+          ),
+          'status' => 2,
+          'region_styles' => array(
+            'header' => '',
+            'left' => '',
+            'middle' => '',
+            'right' => '',
+            'footer' => '',
+          ),
+        ),
+        'teaser' => array(
+          'fields' => array(
+            'title' => array(
+              'region' => 'disabled',
+              'weight' => '-45',
+              'format' => 'nd_title_h1_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'author' => array(
+              'region' => 'disabled',
+              'weight' => '-46',
+              'format' => 'ds_author_nolink',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'links' => array(
+              'region' => 'disabled',
+              'weight' => '-47',
+              'format' => '',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'read_more' => array(
+              'region' => 'header',
+              'weight' => '-50',
+              'format' => 'ds_eval_code',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'post_date' => array(
+              'region' => 'disabled',
+              'weight' => '-49',
+              'format' => 'nd_post_date_long',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+            'body' => array(
+              'region' => 'disabled',
+              'weight' => '-48',
+              'format' => 'nd_bodyfield',
+              'css-class' => '',
+              'labelformat' => 'hidden',
+            ),
+          ),
+          'cssoverrider' => array(
+            'class' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+            'inline' => array(
+              'header' => '',
+              'left' => '',
+              'middle' => '',
+              'right' => '',
+              'footer' => '',
+            ),
+          ),
+          'status' => 2,
+          'region_styles' => array(
+            'header' => '',
+            'left' => '',
+            'middle' => '',
+            'right' => '',
+            'footer' => '',
+          ),
+        ),
+      ),
+    ),
+  );
+  return $data;
+}

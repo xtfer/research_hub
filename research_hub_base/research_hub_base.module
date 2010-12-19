@@ -1,0 +1,3 @@
+<?php
+
+include_once('research_hub_base.features.inc');

@@ -1,0 +1,6 @@
+core = "6.x"
+description = "A collection of features to help you manage the presentation of research."
+name = "Research Hub"
+package = "Research hub"
+project = "research_hub"
+version = "6.x-1.0"
